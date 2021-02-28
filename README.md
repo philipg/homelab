@@ -13,3 +13,7 @@ flux bootstrap github \
  --branch=master \
  --path="kubernetes-cluster/lab" \
  --personal
+
+flux get kustomizations --kubeconfig=../config/admin.conf
+
+default get deployments,services --kubeconfig=../config/admin.conf
